@@ -1,6 +1,6 @@
 const flagChecker = document.querySelector("#flag")
 const outputThing = document.querySelector("#msg")
-const foundFlags = new Set();
+
 
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
@@ -8,7 +8,7 @@ const sidebar = document.getElementById('sidebar');
 const closeBtn2 = document.getElementById('close-btn2');
 
 const _URL = "https://private-flagsss.ellie-woodward-2024.workers.dev/";
-const category = "web_flag"
+const category = "crypt_flag"
 
 
 menuBtn.addEventListener('click', () => { sidebar.classList.add('active'); });
@@ -82,7 +82,7 @@ async function handleInput() {
 
         const number = result.number;
 
-        if (foundFlags.has(number)) {
+        if (isFlagFound(number)) {
 
             outputThing.textContent =
                 `You already found Flag #${number}.`;
@@ -90,14 +90,12 @@ async function handleInput() {
             return;
         }
 
-        foundFlags.add(number);
-        outputThing.textContent = `You found Flag #${number}!`;
+        completeFlag(number);
 
-        const checkbox = document.querySelector(`#flag${number}`);
+        outputThing.textContent =
+            `You found Flag #${number}!`;
 
-        if (checkbox) {
-            checkbox.checked = true;
-        }
+        flagChecker.value = "";
 
         flagChecker.value = "";
 

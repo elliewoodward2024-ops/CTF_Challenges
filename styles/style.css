@@ -69,6 +69,7 @@ header {
     z-index: 100%;
     transition: left 0.3s ease-in-out;
     box-shadow: 2px 0 5px #ffffff;
+    z-index: 999;
 }
 
 .sidebar.active {
@@ -200,7 +201,7 @@ p {
     font-family: monospace;
 }
 
-#flagChecklist {
+.flagChecklist {
     list-style: none;
     padding: 0;
     display: flex;
@@ -208,7 +209,7 @@ p {
     gap: 15px;
 }
 
-#flagChecklist li {
+.flagChecklist li {
     width: calc(33.333% - 10px);
     box-sizing: border-box;
 }
