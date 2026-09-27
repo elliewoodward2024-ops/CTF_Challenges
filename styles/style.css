@@ -24,6 +24,7 @@ body {
     font-family: monospace;
     color: #40ff00;
     padding-left: 3%;
+    padding-right: 3%;
 }
 
 header {
@@ -202,10 +203,14 @@ p {
 #flagChecklist {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 #flagChecklist li {
-    margin: 8px 0;
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
 }
 
 #flagChecklist input[type="checkbox"] {

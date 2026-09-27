@@ -17,3 +17,5 @@ c = pow(m, e, n)
 print("n =", n)
 print("e =", e)
 print("c =", c)
+
+"""May or may not be using this later - depends on what i end up deciding to do with this project"""
