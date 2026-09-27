@@ -35,13 +35,9 @@ function isFlagFound(flagID) {
 
 function resetProgress() {
     localStorage.removeItem(STORAGE_KEY);
+    foundFlags = [];
     document.querySelectorAll("[data-challenge-id]")
-
         .forEach(checkbox => {
-            const category = checkbox.dataset.category;
-            const id = checkbox.dataset.challengeId;
-            const flagID = `${category}-${id}`
-            checkbox.checked = foundFlags.includes(flagID);
             checkbox.checked = false;
         });
     updateProgress();
