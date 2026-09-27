@@ -54,9 +54,7 @@ header {
 
 }
 
-.menu-btn:hover {
-    background-color: #1a1d23;
-}
+
 
 .sidebar {
     height: 100%;
@@ -103,97 +101,7 @@ header {
 
 
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
 
-
-}
-
-
-.tester {
-    flex-direction: column;
-
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 255, 42);
-    border-radius: 8px;
-    padding: 10px;
-    max-width: 350;
-    transition: all 0.3s ease;
-    overflow: visible;
-    cursor: pointer;
-    min-width: 350px;
-
-
-}
-
-.inner {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 10px 0 0 0;
-    padding: 0;
-    background-color: black;
-
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-
-}
-
-.tester:hover {
-    background-color: #1a1d23;
-    transform: translateY(-2px);
-}
-
-.tester.active {
-    background-color: #000000;
-    border-color: #40ff00;
-}
-
-.tester.active .inner {
-    max-height: 300px;
-    opacity: 1;
-    padding: 20px;
-}
-
-.Preview {
-    font-weight: 600;
-    color: #2bff00;
-
-}
-
-footer {
-
-    position: fixed;
-    bottom: 3;
-    text-align: center;
-    left: 40%;
-
-}
-
-.flagTextBox {
-
-    background-color: #000000;
-    font-family: monospace;
-    color: #2bff00;
-    border: #1d1d1d;
-    transition: all 0.3ms ease;
-    width: 400px;
-    padding: 12px 16px;
-
-}
-
-.flagTextBox:focus {
-    border: #000000;
-    outline: none;
-    box-shadow: 0 0 12px rgb(42, 41, 41);
-    width: 500px;
-
-}
 
 p {
 
@@ -244,4 +152,41 @@ p {
     background-color: #40ff00;
     box-shadow: 0 0 8px #40ff00;
     position: relative;
+}
+
+.DANGER {
+    color: rgb(255, 0, 0);
+    font-family: monospace;
+    font-size: 30px;
+
+
+}
+
+.DANGER-description {
+    color: rgb(255, 0, 0);
+    font-family: monospace;
+    font-size: 15px;
+
+
+}
+
+.reset-progress-btn {
+
+    background-color: #000000;
+    font-family: monospace;
+    color: #ff0000;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 2px solid #ff0000;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    font-size: large;
+    font-size: 13px;
+
+}
+
+.reset-progress-btn:hover {
+    background-color: #1a1d23;
+    cursor: pointer;
+
 }

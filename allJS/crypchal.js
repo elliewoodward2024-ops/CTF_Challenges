@@ -66,7 +66,7 @@ async function handleInput() {
                         "application/json"
                 },
                 body: JSON.stringify({
-                    category: category,
+                    category: "crypt_flag",
                     flag: value,
                 })
             });
@@ -84,8 +84,9 @@ async function handleInput() {
         }
 
         const number = result.number;
+        const flagID = result.flagId;
 
-        if (isFlagFound(number)) {
+        if (isFlagFound(flagID)) {
 
             outputThing.textContent =
                 `You already found Flag #${number}.`;
@@ -93,7 +94,7 @@ async function handleInput() {
             return;
         }
 
-        completeFlag(number);
+        completeFlag(flagID);
 
         outputThing.textContent =
             `You found Flag #${number}!`;

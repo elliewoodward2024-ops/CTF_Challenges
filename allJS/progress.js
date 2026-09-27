@@ -38,8 +38,10 @@ function resetProgress() {
     document.querySelectorAll("[data-challenge-id]")
 
         .forEach(checkbox => {
-            const id = String(checkbox.dataset.challengeId);
-            checkbox.checked = foundFlags.includes(id);
+            const category = checkbox.dataset.category;
+            const id = checkbox.dataset.challengeId;
+            const flagID = `${category}-${id}`
+            checkbox.checked = foundFlags.includes(flagID);
         });
     updateProgress();
 }
@@ -50,8 +52,10 @@ function updateProgress() {
     document.querySelectorAll("[data-challenge-id]")
 
         .forEach(checkbox => {
-            const id = String(checkbox.dataset.challengeId);
-            checkbox.checked = foundFlags.includes(id);
+            const category = checkbox.dataset.category;
+            const id = checkbox.dataset.challengeId;
+            const flagID = `${category}-${id}`
+            checkbox.checked = foundFlags.includes(flagID);
         });
 
 

@@ -49,19 +49,22 @@ async function handleInput() {
 
                 method: "POST",
 
-                header: {
+                headers: {
                     "Content-Type":
                         "application/json"
                 },
                 body: JSON.stringify({
-                    category: category,
+                    category: "web_flag",
                     flag: value,
                 })
             });
 
         console.log("Response:", response.status)
         const result = await response.json();
-        console.log("Worker response: ", result);
+
+        console.log("Worker response:", result);
+        console.log("Result number:", result.number);
+        console.log("Result number type:", typeof result.number);
 
         if (!result.correct) {
             outputThing.textContent = "No, this is not a flag, good try though."
@@ -69,8 +72,9 @@ async function handleInput() {
         }
 
         const number = result.number;
+        const flagID = result.flagId;
 
-        if (foundFlags.has(number)) {
+        if (isFlagFound(flagID)) {
 
             outputThing.textContent =
                 `You already found Flag #${number}.`;
@@ -78,16 +82,13 @@ async function handleInput() {
             return;
         }
 
-        foundFlags.add(number);
-        outputThing.textContent = `You found Flag #${number}!`;
+        completeFlag(flagID);
 
-        const checkbox = document.querySelector(`#flag${number}`);
-
-        if (checkbox) {
-            checkbox.checked = true;
-        }
+        outputThing.textContent =
+            `You found Flag #${number}!`;
 
         flagChecker.value = "";
+
 
     }
 
@@ -107,6 +108,7 @@ flagChecker.addEventListener("keydown", function (event) {
 
     }
 });
+
 
 
 

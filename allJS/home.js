@@ -9,7 +9,7 @@ const sidebar = document.getElementById('sidebar');
 
 
 const _URL = "https://private-flagsss.ellie-woodward-2024.workers.dev/";
-const category = "web_flag"
+
 
 
 menuBtn.addEventListener('click', () => { sidebar.classList.add('active'); });
