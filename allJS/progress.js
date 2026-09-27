@@ -8,7 +8,7 @@ function getFoundFlags() {
     );
 }
 
-function saveFoundFlags() {
+function saveFoundFlags(foundFlags) {
     localStorage.setItem(
         STORAGE_KEY,
         JSON.stringify(foundFlags)
@@ -16,7 +16,7 @@ function saveFoundFlags() {
 
 }
 
-function compleateFlag(flagID) {
+function completeFlag(flagID) {
     const foundFlags = getFoundFlags();
     if (!foundFlags.includes(flagID)) {
         foundFlags.push(flagID);
@@ -43,12 +43,7 @@ function updateProgress() {
             const id = checkbox.dataset.challengeId;
             checkbox.checked = foundFlags.includes(id);
         });
-    document.querySelectorALL("[data-progress]")
-        .forEach(counter => {
-            const total = Number(counter.dataset.total);
-            counter.textContent =
-                `${foundFlags.length} / ${total}`;
-        });
+
 
 }
 

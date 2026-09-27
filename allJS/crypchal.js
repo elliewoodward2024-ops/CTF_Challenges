@@ -73,7 +73,10 @@ async function handleInput() {
 
         console.log("Response:", response.status)
         const result = await response.json();
-        console.log("Worker response: ", result);
+
+        console.log("Worker response:", result);
+        console.log("Result number:", result.number);
+        console.log("Result number type:", typeof result.number);
 
         if (!result.correct) {
             outputThing.textContent = "No, this is not a flag, good try though."
@@ -90,17 +93,10 @@ async function handleInput() {
             return;
         }
 
-        foundFlags.add(number);
         completeFlag(number);
 
-
-        if (checkbox) {
-            checkbox.checked = true;
-        }
-
-        flagChecker.value = "";
-
-        outputThing.textContent = `You found Flag #${number}!`;
+        outputThing.textContent =
+            `You found Flag #${number}!`;
 
         flagChecker.value = "";
 
