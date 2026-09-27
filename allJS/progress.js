@@ -35,12 +35,11 @@ function isFlagFound(flagID) {
 
 function resetProgress() {
     localStorage.removeItem(STORAGE_KEY);
-    foundFlags = [];
-    document.querySelectorAll("[data-challenge-id]")
-        .forEach(checkbox => {
-            checkbox.checked = false;
-        });
-    updateProgress();
+    document.querySelectorAll("[data-challenge-id]").forEach(checkbox => {
+        checkbox.checked = false;
+        checkbox.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+
 }
 
 function updateProgress() {
