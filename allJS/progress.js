@@ -42,6 +42,7 @@ function resetProgress() {
             const id = checkbox.dataset.challengeId;
             const flagID = `${category}-${id}`
             checkbox.checked = foundFlags.includes(flagID);
+            checkbox.checked = false;
         });
     updateProgress();
 }
