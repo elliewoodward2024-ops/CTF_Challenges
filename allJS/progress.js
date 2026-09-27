@@ -38,7 +38,7 @@ function resetProgress() {
 function updateProgress() {
     const foundFlags = getFoundFlags();
 
-    document.querySelectorALL("[data-challenge-id]")
+    document.querySelectorAll("[data-challenge-id]")
         .forEach(checkbox => {
             const id = checkbox.dataset.challengeId;
             checkbox.checked = foundFlags.includes(id);
