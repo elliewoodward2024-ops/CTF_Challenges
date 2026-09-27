@@ -1,6 +1,6 @@
 const flagChecker = document.querySelector("#flag")
 const outputThing = document.querySelector("#msg")
-
+const foundFlags = new Set();
 
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
@@ -61,7 +61,7 @@ async function handleInput() {
 
                 method: "POST",
 
-                header: {
+                headers: {
                     "Content-Type":
                         "application/json"
                 },
@@ -90,14 +90,20 @@ async function handleInput() {
             return;
         }
 
+        foundFlags.add(number);
         completeFlag(number);
 
-        outputThing.textContent =
-            `You found Flag #${number}!`;
+
+        if (checkbox) {
+            checkbox.checked = true;
+        }
 
         flagChecker.value = "";
 
+        outputThing.textContent = `You found Flag #${number}!`;
+
         flagChecker.value = "";
+
 
     }
 
