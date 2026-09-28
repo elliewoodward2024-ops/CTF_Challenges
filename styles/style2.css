@@ -147,16 +147,6 @@ header {
 
 }
 
-.tester .close-btn {
-    text-decoration: none;
-    color: #ff0099;
-    position: relative;
-    font-size: 18px;
-    border: none;
-    top: -3px;
-    left: 75px;
-
-}
 
 .tester .close-btn2 {
     text-decoration: none;

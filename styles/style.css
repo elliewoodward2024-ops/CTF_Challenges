@@ -19,6 +19,7 @@
 }
 
 
+
 body {
     background-color: black;
     font-family: monospace;
@@ -189,4 +190,8 @@ p {
     background-color: #1a1d23;
     cursor: pointer;
 
+}
+
+.hmm {
+    color: #000000;
 }
