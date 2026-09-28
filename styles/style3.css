@@ -230,3 +230,8 @@ p {
     box-shadow: 0 0 8px #00eaff;
     position: relative;
 }
+
+.thing {
+    text-decoration: none;
+    color: #00eaff;
+}
