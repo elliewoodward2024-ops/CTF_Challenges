@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    font-family: monospace;
+    color: #1900ff;
+    font-size: 30px;
+    text-shadow: 0 0 12px #1900ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    font-family: monospace;
+    color: #1900ff;
+    font-size: 30px;
+    text-shadow: 0 0 12px #1900ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
