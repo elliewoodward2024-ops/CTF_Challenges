@@ -1,7 +1,7 @@
 import string
 import math
 
-ALPHABET = string.ascii_uppercase
+ALPHABET = string.ascii_lowercase
 
 
 def mod_inverse(a, m):
@@ -16,7 +16,7 @@ def mod_inverse(a, m):
 def affine_encrypt(text, a, b):
     result = ""
 
-    for char in text.upper():
+    for char in text.lower():
         if char in ALPHABET:
             x = ALPHABET.index(char)
             encrypted = (a * x + b) % 26
@@ -30,7 +30,7 @@ def affine_encrypt(text, a, b):
 
 
 
-plaintext = "A_LITTLE_MATH_NEVER_HURT_NOBODY"
+plaintext = "a_little_math_never_hurt_nobody"
 
 a = 9
 b = 11
