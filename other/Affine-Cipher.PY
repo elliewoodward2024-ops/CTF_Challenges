@@ -5,11 +5,12 @@ ALPHABET = string.ascii_uppercase
 
 
 def mod_inverse(a, m):
-    """Find the modular inverse of a modulo m."""
+
     for x in range(1, m):
         if (a * x) % m == 1:
             return x
     return None
+
 
 
 def affine_encrypt(text, a, b):
@@ -36,7 +37,7 @@ b = 11
 
 
 if math.gcd(a, 26) != 1:
-    print("ERROR: 'a' must be coprime with 26.")
+    print("ERROR: 'a' must be co-prime with 26.")
 else:
     ciphertext = affine_encrypt(plaintext, a, b)
 
