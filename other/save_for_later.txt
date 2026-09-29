@@ -121,3 +121,15 @@ flagChecker.addEventListener("keydown", function (event) {
         }
     );
 }
+
+
+
+
+fetch("https://private-flagsss.ellie-woodward-2024.workers.dev/webchallenge/headers", {
+    method: "POST",
+    headers: {
+        "X-CTF-Key": "7h3_4n5w3r_15_h1dd3n"
+    }
+})
+.then(r => r.json())
+.then(console.log);
