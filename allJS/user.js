@@ -21,7 +21,7 @@ document.getElementById("sign-in").addEventListener("click", async () => {
                     "Content-Type": "application/json",
                     "X-Username": username,
                     "X-Password": password,
-                    "X-Admin": "false"
+
                 },
 
                 body: JSON.stringify({
