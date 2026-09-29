@@ -20,3 +20,7 @@ header {
     align-items: center;
     text-align: center;
 }
+
+.system-note {
+    color: #000;
+}
