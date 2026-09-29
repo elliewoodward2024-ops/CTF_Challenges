@@ -102,3 +102,22 @@ flagChecker.addEventListener("keydown", function (event) {
         handleInput();
 
     }
+
+
+    if (
+    url.pathname === "/webchallenge/headers-clue" &&
+    request.method === "POST"
+) {
+    return new Response(
+        JSON.stringify({
+            status: "ok",
+            reference: "7h3_4n5w3r_15_h1dd3n"
+        }),
+        {
+            status: 200,
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }
+    );
+}

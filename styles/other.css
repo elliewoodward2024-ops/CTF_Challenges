@@ -1,9 +1,31 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+::view-transition-old(root) {
+    animation: 0.5s ease-out both fade-out;
+}
+
+::view-transition-new(root) {
+    animation: 0.5s ease-in both fade-int;
+}
+
+
 body {
     background-color: black;
     font-family: monospace;
     color: #ff6200;
     padding-left: 3%;
     padding-right: 3%;
+    transition: opacity 0.4s ease-in-out;
 }
 
 header {
@@ -80,4 +102,55 @@ header {
 
 .hehe {
     font-size: 18px;
+}
+
+.hmm {
+    text-align: center;
+    font-family: monospace;
+    color: #5500ff;
+    font-size: 50px;
+    text-shadow: 0 0 12px #5500ff
+}
+
+.container2 {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #5500ff;
+    border: 2px solid #000000;
+    width: 600px;
+    padding: 12px 30px;
+    border-radius: 0px;
+    margin: 0 auto;
+    box-shadow: 0 0 99px 7px #5500ff;
+    text-align: left;
+    font-size: 15px;
+
+
+}
+
+.huh {
+    font-size: 23px;
+}
+
+.try {
+
+    background-color: #000000;
+    font-family: monospace;
+    color: #5500ff;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: .5px solid #5500ff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-size: large;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.try:hover {
+    background-color: #1a1d23;
+    cursor: pointer;
+
 }
