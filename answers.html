@@ -1,0 +1,179 @@
+<code>
+<!doctype html>
+<html lang="en">
+
+
+<head>
+<title>Answers</title>
+<link rel="stylesheet" href="styles/style4.css">
+<script src="allJS/progress.js"></script>
+<script src="allJS/crypchal.js" defer></script>
+<a href="answers.html">You Really Want The Answers??</a>
+<meta name="view-transition" content="same-origin">
+
+</head>
+
+<header>
+<h1>FULL ANSWERS...</h1>
+<button id="menu-btn" class="menu-btn">&#9776; Open Menu</button>
+<br><br>
+<nav id="sidebar" class="sidebar">
+<div class="sidebar-links">
+<a href="javascript:void(0)" class="closebtn" id="close-btn">&times;</a>
+<a href="index.html">Home</a>
+<a href="crypChal.html">Cryptography Challenges</a>
+<a href="webChal.html">Web Exploration Challenges</a>
+<a href="answers.html">You Really Want The Answers??</a>
+</div>
+
+
+</header>
+
+
+<body>
+<dev>
+<div class="container">
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview"> Description (Click to Expand):</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn">&times;</a>
+        <p class="inner">
+            These have all the answers for all challenges through the page. These are not
+            full descriptions of explanation but quick steps for solving each problem.
+            This could be in form of command or quick small explanation. 
+        </p>
+        <br>
+        <div class="tester2" onclick="toggleOn2(this, event)">
+            <span class="Preview">Both Flags 1 Answer</span>
+                <p class="inner-hint">ctf{Gr3@t_j06_y0U_f0u^d_the_f!rst_0ne}</p>
+        </div>
+    </div>
+
+
+   
+
+
+    <div class="tester" onclick= "toggleOn(this, event)" >
+        <span class="Preview">Crypt Challenge 2</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">You can either use Cyber Chef to decode it or use command: <br><br>
+            echo "[encoded base64]" | base64 -d
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 2</span>
+                    <p class="inner-hint">ctf{7h3_b@s!cs_of_b@se64}</p>
+            </div>
+
+    </div>
+
+    
+
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Crypt Challenge 3</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">Using the hint or recognising halfway shift also known as Rot13. Either decode by hand
+            or using a site such as Cyber Chef to decode it. 
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 3</span>
+                    <p class="inner-hint">ctf{y0ur_f!rst_ROTthirteen_pr0blem}</p>
+            </div>
+    </div>
+    
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Crypt Challenge 4</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">Using Cyber Chef to decode this one. The order of decoding is: 
+            From binary, From Base32, From Octal, From Hex, Base64 </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 4</span>
+                    <p class="inner-hint">ctf{@LwayS_n33d_a_c0mb0_!n_th3r3}</p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Crypt Challenge 5</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">Smiler to challenge 3, but this one has a shift 12, known as a cesar cypher.
+             You can either decrypt by hand, write script, or use the Cryptii or Boxentriq tool. 
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 5</span>
+                    <p class="inner-hint">ctf{gotta_love_a_good_Caesar_salad}</p>
+            </div>
+    </div>
+
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Crypt Challenge 6</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">Using the hint you could have looked up what Vigenère is which you would have noticed 
+            is a kind of cypher. Then you may have leant or known that you need a key for this kind of cypher.
+            From the hint, you could have guess the key was "weird" due to the asterisk around it. You could have 
+            used the Cryptii or Boxentriq tool, done by hand, or write a script to decode this.
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 6</span>
+                    <p class="inner-hint">ctf{hmm_this_is_a_new_one_even_for_me!}</p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Crypt Challenge 7</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">This was a little bit more obscure, but after reading or trail you could find
+            out that this style with 'a' and 'b' is a Affine cypher. Then covert letters to numbers (A=0, Z=25),
+            find the modular inverse ((a*a^{-1})(mod26) = 1 ), apply decryption formula (P = a^{-1}*(C - b)(mod26)), and 
+            lastly covert numbers back to letters. If you don't want to do all that you could use the Cryptii or Boxentriq tool.
+            Then just wrap your answer in ctf{}. 
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 7</span>
+                    <p class="inner-hint">ctf{a_little_math_never_hurt_nobody}</p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Crypt Challenge 8</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">Once again more of an obscure hint and cypher. This is a Playfair cypher.
+            To solve this playfair cypher you first want to make the 5*5 grid replacing the first letters
+            with the key words, then filling the rest of the grid with the rest of the alphabet combining I and J 
+            to fit 25 letters. You would then want to spilt the cypher text into pairings. Apply the main rules of the cypher.
+            Or you could use the Boxentriq tool. 
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 8</span>
+                    <p class="inner-hint">ctf{fun_times_we_are_having}</p>
+            </div>
+    </div>
+
+
+     <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Crypt Challenge 9</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner">This is where hint 9 goes </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 9</span>
+                    <p class="inner-hint"> Do you know base64? </p>
+            </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+ </dev>
+</body>
+
+</html>
+</code>

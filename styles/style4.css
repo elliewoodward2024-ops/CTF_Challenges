@@ -18,31 +18,37 @@
     animation: 0.5s ease-in both fade-int;
 }
 
+
+
+
 body {
     background-color: black;
     font-family: monospace;
-    color: #00eaff;
+    color: #a600ff;
     padding-left: 3%;
+    font-size: 14px;
+
 }
 
 header {
     font-family: monospace;
-    color: #00eaff;
+    color: #a600ff;
     font-size: 30px;
-    text-shadow: 0 0 12px #00eaff;
+    text-shadow: 0 0 12px #a600ff;
 
 }
 
 .sidebar a {
     font-family: monospace;
-    color: #ffffff;
+    color: #a600ff;
     font-size: 70%;
+    overflow: hidden;
 }
 
 .menu-btn {
     background-color: #000000;
     font-family: monospace;
-    color: #00eaff;
+    color: #a600ff;
     padding: 10px 15px;
     cursor: pointer;
     border: none;
@@ -64,17 +70,20 @@ header {
     left: -250px;
     background-color: #000000;
     padding-top: 50px;
-    z-index: 9999;
+    z-index: 999;
     transition: left 0.3s ease-in-out;
     box-shadow: 2px 0 5px #ffffff;
+    overflow: hidden;
 }
 
 .sidebar.active {
     left: 0;
+
+    overflow: hidden;
+
 }
 
 .sidebar .close-btn {
-    position: absolute;
     position: absolute;
     top: 15px;
     right: 25px;
@@ -82,6 +91,8 @@ header {
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+    transition: left 0.3s ease-out;
+    overflow: hidden;
 }
 
 .sidebar-links a {
@@ -95,68 +106,160 @@ header {
     text-shadow: 2px 0 5px #ffffff;
 }
 
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     align-items: flex-start;
-}
 
+
+}
 
 .tester {
     flex-direction: column;
-
     align-items: center;
     background-color: rgb(0, 0, 0);
-    border: 1px solid #00eaff;
+    border: 1px solid #a600ff;
     border-radius: 8px;
     padding: 10px;
-    max-width: 350;
+    transition: all 0.3s ease;
+    overflow: visible;
+    cursor: pointer;
+    min-width: 400px;
+    min-height: 100px;
+
+}
+
+.tester .close-btn {
+    text-decoration: none;
+    color: #a600ff;
+    position: relative;
+    font-size: 18px;
+    border: none;
+    top: -3px;
+    left: 125px;
+
+}
+
+
+.tester .close-btn2 {
+    text-decoration: none;
+    color: #a600ff;
+    position: relative;
+    font-size: 18px;
+    border: none;
+    top: -3px;
+    left: 235px;
+}
+
+.tester .close-btn3 {
+    text-decoration: none;
+    color: #a600ff;
+    position: relative;
+    font-size: 18px;
+    border: none;
+    top: -3px;
+    left: 230px;
+}
+
+.tester2 {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #a600ff;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 350px;
     transition: all 0.3s ease;
     overflow: visible;
     cursor: pointer;
     min-width: 350px;
+    text-decoration: none;
+
 }
 
 .inner {
-    width: 100%;
+    width: 390px;
     box-sizing: border-box;
     margin: 10px 0 0 0;
     padding: 0;
     background-color: black;
-
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
+
+.inner a {
+    text-decoration: none;
+    color: #a600ff;
+
+}
+
+.inner-hint {
+    width: 350px;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    padding: 0;
+    background-color: black;
+    min-width: 350px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+
 
 .tester:hover {
     background-color: #1a1d23;
 
 }
 
+.tester2:hover {
+    background-color: #1a1d23;
+
+}
+
+.tester2.active {
+    background-color: #000000;
+    color: #a600ff;
+}
+
 .tester.active {
     background-color: #000000;
-    border-color: #00eaff;
+    color: #a600ff;
 }
 
 .tester.active .inner {
     max-height: 300px;
     opacity: 1;
+    margin: 10px 0;
     padding: 20px;
 }
 
-.Preview {
-    font-weight: 600;
-    color: #00eaff;
+.tester2.active>.inner-hint {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 10px;
 }
 
-footer {
-    position: fixed;
-    bottom: 3;
-    text-align: center;
-    left: 40%;
+
+.Preview {
+    font-weight: 600;
+    color: #a600ff;
+
+}
+
+
+
+
+
+
+
+.thing {
+    font-size: large;
 
 }
 
@@ -164,11 +267,12 @@ footer {
 
     background-color: #000000;
     font-family: monospace;
-    color: #00eaff;
+    color: #a600ff;
     border: #1d1d1d;
     transition: all 0.3ms ease;
     width: 400px;
     padding: 12px 16px;
+    font-size: medium;
 
 }
 
@@ -181,10 +285,12 @@ footer {
 }
 
 p {
-
-    color: #00eaff;
+    color: #a600ff;
     font-family: monospace;
 }
+
+
+
 
 .flagChecklist {
     list-style: none;
@@ -192,6 +298,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+
 }
 
 .flagChecklist li {
@@ -203,16 +310,19 @@ p {
     appearance: none;
     width: 18px;
     height: 18px;
-    border: 1px solid #00eaff;
+    border: 1px solid #a600ff;
     background-color: black;
     cursor: pointer;
     vertical-align: middle;
     margin-right: 8px;
+    z-index: 1 !important;
+    font-size: large;
 }
 
 #flagChecklist input[type="checkbox"]:checked {
-    background-color: #00eaff;
+    background-color: #a600ff;
     position: relative;
+    z-index: 1 !important;
 }
 
 #flagChecklist input[type="checkbox"]:checked::after {
@@ -223,15 +333,12 @@ p {
     position: absolute;
     left: 3px;
     top: -1px;
+    z-index: 1 !important;
 }
 
 #flagChecklist input[type="checkbox"]:checked {
-    background-color: #00eaff;
-    box-shadow: 0 0 8px #00eaff;
+    background-color: #a600ff;
+    box-shadow: 0 0 8px #a600ff;
     position: relative;
-}
-
-.thing {
-    text-decoration: none;
-    color: #00eaff;
+    z-index: 1 !important;
 }
