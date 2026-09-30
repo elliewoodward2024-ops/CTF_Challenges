@@ -14,16 +14,16 @@
 </head>
 
 <header>
-<h1>FULL ANSWERS...</h1>
+<h1 style="padding-top: 10px;">./Answers</h1>
 <button id="menu-btn" class="menu-btn">&#9776; Open Menu</button>
 <br><br>
 <nav id="sidebar" class="sidebar">
 <div class="sidebar-links">
 <a href="javascript:void(0)" class="closebtn" id="close-btn">&times;</a>
-<a href="index.html">Home</a>
-<a href="crypChal.html">Cryptography Challenges</a>
-<a href="webChal.html">Web Exploration Challenges</a>
-<a href="answers.html">You Really Want The Answers??</a>
+<a href="index.html">cd ..</a>
+<a href="crypChal.html"> cd Crypto_Challenges</a>
+<a href="webChal.html"> cd Web_Challenges</a>
+<a href="answers.html">cd Answers</a>
 </div>
 
 
@@ -31,14 +31,15 @@
 
 
 <body>
+    <h3>&emsp;Cryptography Challenges:</h3>
 <dev>
 <div class="container">
     <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview"> Description (Click to Expand):</span>
+        <span class="Preview">$ cat ./Description</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn">&times;</a>
         <p class="inner">
             These have all the answers for all challenges through the page. These are not
-            full descriptions of explanation but quick steps for solving each problem.
+            full in depth explanation but quick steps for solving each problem.
             This could be in form of command or quick small explanation. 
         </p>
         <br>
@@ -53,7 +54,7 @@
 
 
     <div class="tester" onclick= "toggleOn(this, event)" >
-        <span class="Preview">Crypt Challenge 2</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/02</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">You can either use Cyber Chef to decode it or use command: <br><br>
             echo "[encoded base64]" | base64 -d
@@ -70,7 +71,7 @@
 
 
     <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview">Crypt Challenge 3</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/03</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">Using the hint or recognising halfway shift also known as Rot13. Either decode by hand
             or using a site such as Cyber Chef to decode it. 
@@ -83,10 +84,10 @@
     </div>
     
     <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview">Crypt Challenge 4</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/04</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">Using Cyber Chef to decode this one. The order of decoding is: 
-            From binary, From Base32, From Octal, From Hex, Base64 </p>
+            From binary, From Base32, From Octal, From Hex, From Base64 </p>
         <br>
             <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Flag 4</span>
@@ -95,9 +96,9 @@
     </div>
 
     <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview">Crypt Challenge 5</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/05</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
-        <p class="inner">Smiler to challenge 3, but this one has a shift 12, known as a cesar cypher.
+        <p class="inner">Smiler to challenge 3, but this one has a shift of 12, known as a cesar cypher.
              You can either decrypt by hand, write script, or use the Cryptii or Boxentriq tool. 
         </p>
         <br>
@@ -109,7 +110,7 @@
 
 
     <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview">Crypt Challenge 6</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/06</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">Using the hint you could have looked up what Vigenère is which you would have noticed 
             is a kind of cypher. Then you may have leant or known that you need a key for this kind of cypher.
@@ -124,9 +125,9 @@
     </div>
 
     <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview">Crypt Challenge 7</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/07</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
-        <p class="inner">This was a little bit more obscure, but after reading or trail you could find
+        <p class="inner">This was a little bit more obscure, but after reading or trial and error you could find
             out that this style with 'a' and 'b' is a Affine cypher. Then covert letters to numbers (A=0, Z=25),
             find the modular inverse ((a*a^{-1})(mod26) = 1 ), apply decryption formula (P = a^{-1}*(C - b)(mod26)), and 
             lastly covert numbers back to letters. If you don't want to do all that you could use the Cryptii or Boxentriq tool.
@@ -140,7 +141,7 @@
     </div>
 
     <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview">Crypt Challenge 8</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/08</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">Once again more of an obscure hint and cypher. This is a Playfair cypher.
             To solve this playfair cypher you first want to make the 5*5 grid replacing the first letters
@@ -157,7 +158,7 @@
 
 
      <div class="tester" onclick="toggleOn(this, event)">
-        <span class="Preview">Crypt Challenge 9</span>
+        <span class="Preview">$ cat ./Challenge/Crypto/09</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">This is where hint 9 goes </p>
         <br>
@@ -168,6 +169,94 @@
     </div>
 
 
+ </div>
+ 
+ <p class="hmm"></p>
+<h3>&emsp;Web Exploration Challenges:</h3>
+<div class="container">
+    <div class="tester" onclick= "toggleOn(this, event)" >
+        <span class="Preview">$ cat ./Challenge/Web/02</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner">
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 2</span>
+                    <p class="inner-hint">ctf{just_ch3ck!ng_7he_c0d3?}</p>
+            </div>
+
+    </div>
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Web/03</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner"> 
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 3</span>
+                    <p class="inner-hint">ctf{Th3_c00k!3_m0^st3r}</p>
+            </div>
+    </div>
+    
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Web/04</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner"></p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 4</span>
+                    <p class="inner-hint">ctf{Highlighting?_Really?_basic_finds}</p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Web/05</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner"> 
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 5</span>
+                    <p class="inner-hint">ctf{run@way_f1ag_th!s_0ne_is}</p>
+            </div>
+    </div>
+
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Web/06</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner">
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 6</span>
+                    <p class="inner-hint">ctf{0ne_s!mple_ch@nge_against_w3ak_c0d3}</p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Web/07</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner">
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 7</span>
+                    <p class="inner-hint">ctf{th3_h3ad3r_w@s_m!ss!ng}</p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Web/08</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner">
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 8</span>
+                    <p class="inner-hint"></p>
+            </div>
+    </div>
 
     </div>
 </div>

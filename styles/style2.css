@@ -64,10 +64,10 @@ header {
 
 .sidebar {
     height: 100%;
-    width: 250px;
+    width: 300px;
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -300px;
     background-color: #000000;
     padding-top: 50px;
     z-index: 999;
@@ -142,7 +142,7 @@ header {
     font-size: 18px;
     border: none;
     top: -3px;
-    left: 125px;
+    left: 215px;
 
 }
 
@@ -154,7 +154,7 @@ header {
     font-size: 18px;
     border: none;
     top: -3px;
-    left: 285px;
+    left: 210px;
 }
 
 .tester .close-btn3 {
@@ -164,7 +164,7 @@ header {
     font-size: 18px;
     border: none;
     top: -3px;
-    left: 280px;
+    left: 210px;
 }
 
 .tester2 {
@@ -310,6 +310,7 @@ p {
 .flagChecklist li {
     width: calc(33.333% - 10px);
     box-sizing: border-box;
+    z-index: -1;
 }
 
 #flagChecklist input[type="checkbox"] {
