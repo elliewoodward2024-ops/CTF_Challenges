@@ -9,7 +9,6 @@
 <script src="allJS/progress.js"></script>
 <script src="allJS/crypchal.js" defer></script>
 <meta name="view-transition" content="same-origin">
-
 </head>
 
 <header>
@@ -24,8 +23,13 @@
 <a href="webChal.html"> cd Web_Challenges</a>
 <a href="answers.html">cd Answers</a>
 </div>
-
 </header>
+
+
+
+
+
+
 
 
 <body>
@@ -148,8 +152,17 @@
             </div>
     </div>
 
-
-
+     <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Tools/Links</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner"><a href="https://gchq.github.io/CyberChef/" target="_blank" >CyberChef</a>&emsp;
+        <a href="https://cryptii.com/pipes/caesar-cipher/" target="_blank" >Cryptii</a>&emsp;
+        <a href="https://www.boxentriq.com/ciphers/caesar-cipher" target="_blank" >Boxentriq</a></p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Use</span>
+                    <p class="inner-hint">Use these links at well to help with any of the challenge above.</p>
+            </div>
     </div>
 </div>
 
