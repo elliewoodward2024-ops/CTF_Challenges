@@ -1,0 +1,39 @@
+Merkle–Hellman challenge
+
+challenge 9 
+
+
+- encryption relationship 
+    B[i] = (r × W[i]) mod q
+
+ - byte gets encrypted as:
+    C = Σ(bit[i] × B[i])
+
+ - decryption is:
+    
+    C' = C × r⁻¹ mod q
+
+
+W = [4, 7, 15, 31, 64, 130, 263, 529]
+
+4 + 7 + 15+ 31+ 64+ 130+ 263+ 529 =1043 
+so q = 1192
+
+1 < r < q
+r = 17
+
+gcd(17, 1192) = 1
+
+Bᵢ = (Wᵢ × r) mod q
+thus plug the numbers in -> 
+the public key would be: B= [68, 119, 255, 527, 1088, 1018, 895, 649]
+
+the message: numbers_it_always_comes_back_to_numbers
+the encrypted message:
+2814 3324 2763 2032 2236 3120 3188 2952
+2508 3256 2952 1981 2695 3443 1981 3596
+3188 2952 2100 2882 2763 2236 3188 2952
+2032 1981 2100 2627 2952 3256 2882 2952
+2814 3324 2763 2032 2236 3120 3188
+
+	​
