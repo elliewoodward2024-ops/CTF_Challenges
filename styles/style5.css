@@ -1,0 +1,332 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #a600ff;
+    }
+}
+
+::view-transition-old(root) {
+    animation: 0.5s ease-out both fade-out;
+}
+
+::view-transition-new(root) {
+    animation: 0.5s ease-in both fade-int;
+}
+
+
+
+
+body {
+    background-color: black;
+    font-family: monospace;
+    color: #0077ff;
+    padding-left: 3%;
+    font-size: 14px;
+
+}
+
+header {
+    font-family: monospace;
+    color: #0077ff;
+    font-size: 30px;
+    text-shadow: 0 0 12px #0077ff;
+
+}
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+
+
+}
+
+.tester {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #0077ff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    overflow: visible;
+    cursor: pointer;
+    min-width: 400px;
+    min-height: 100px;
+
+}
+
+.tester .close-btn {
+    text-decoration: none;
+    color: #0077ff;
+    position: relative;
+    font-size: 18px;
+    border: none;
+    top: -3px;
+    left: 215px;
+
+}
+
+
+.tester .close-btn2 {
+    text-decoration: none;
+    color: #0077ff;
+    position: relative;
+    font-size: 18px;
+    border: none;
+    top: -3px;
+    left: 150px;
+}
+
+.tester .close-btn3 {
+    text-decoration: none;
+    color: #0077ff;
+    position: relative;
+    font-size: 18px;
+    border: none;
+    top: -3px;
+    left: 150px;
+}
+
+.tester2 {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #0077ff;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 350px;
+    transition: all 0.3s ease;
+    overflow: visible;
+    cursor: pointer;
+    min-width: 350px;
+    text-decoration: none;
+
+}
+
+.inner {
+    width: 390px;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    padding: 0;
+    background-color: black;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.inner a {
+    text-decoration: none;
+    color: #0077ff;
+
+}
+
+.inner-hint {
+    width: 350px;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    padding: 0;
+    background-color: black;
+    min-width: 350px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+
+
+.tester:hover {
+    background-color: #1a1d23;
+    transform: translateY(-3px);
+
+}
+
+.tester2:hover {
+    background-color: #1a1d23;
+
+}
+
+.tester2.active {
+    background-color: #000000;
+    color: #0077ff;
+}
+
+.tester.active {
+    background-color: #000000;
+    color: #0077ff;
+}
+
+.tester.active .inner {
+    max-height: 300px;
+    opacity: 1;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.tester2.active>.inner-hint {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+
+.Preview {
+    font-weight: 600;
+    color: #0077ff;
+
+}
+
+
+
+
+
+
+
+.thing {
+    font-size: large;
+
+}
+
+.flagTextBox {
+
+    background-color: #000000;
+    font-family: monospace;
+    color: #0077ff;
+    border: #1d1d1d;
+    transition: all 0.3ms ease;
+    width: 400px;
+    padding: 12px 16px;
+    font-size: medium;
+
+}
+
+.flagTextBox:focus {
+    border: #000000;
+    outline: none;
+    box-shadow: 0 0 12px rgb(42, 41, 41);
+    width: 500px;
+
+}
+
+p {
+    color: #0077ff;
+    font-family: monospace;
+}
+
+
+
+
+.flagChecklist {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.flagChecklist li {
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
+}
+
+#flagChecklist input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #0077ff;
+    background-color: black;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 8px;
+    z-index: 1 !important;
+    font-size: large;
+}
+
+#flagChecklist input[type="checkbox"]:checked {
+    background-color: #0077ff;
+    position: relative;
+    z-index: 1 !important;
+}
+
+#flagChecklist input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    z-index: 1 !important;
+}
+
+#flagChecklist input[type="checkbox"]:checked {
+    background-color: #0077ff;
+    box-shadow: 0 0 8px #0077ff;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.hmm {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 550px;
+    padding-right: 550px;
+}
+
+.typewriter-container {
+    display: inline-block;
+}
+
+.typewriter-text {
+    font-family: monospace;
+    color: #0077ff;
+    font-size: 60px !important;
+    text-shadow: 0 0 12px #0077ff;
+
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+
+    border-right: 2px solid #0077ff;
+    margin: 0 auto;
+    letter-spacing: .05em;
+
+    animation:
+        typing 2s steps(18, end) forwards,
+        blink-caret .75s step-end infinite;
+}
