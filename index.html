@@ -6,8 +6,8 @@
 <head> 
 <title>Home</title>
 <link rel="stylesheet" href="styles/style.css">
-<script src="allJS/webchal.js"c defer></script> 
-<script src="allJS/progress.js"></script>
+<script src="allJS/webchal.js" defer></script> 
+<script src="allJS/progress.js" defer></script>
 <meta name="view-transition" content="same-origin">
 
 </head>
@@ -32,98 +32,104 @@
 
 
 <body>
-<p> Info on what the page is about is gonna go in here but i am not gonna add this right now -
-
+<h2>$ cat ./about</h2>
+<p class="intro">
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    _ _ _ _ _ _ _ _ _ _ _  <br><br><br>
+    Welcome to a CTF Challenge Page!<br><br>
+    The idea of this page was to create a selection 
+    of easy to harder challenge that cover a range of different
+    cryptography cyphers as well as web exploration challenges.
+<br><br>
+    On this page all resources needed to solve the cryptography 
+    challenges are provided in the tools section on the challenge page.
+    (Though I do encourage writing your own scripts or hand solving the problem
+    where you are able too.)
+    However to compleat the web exploration style challenges you 
+    will need to be able to use the inspect tool on your computer. 
+<br><br><br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    _ _ _ _ _ _ _ _ _ _ _  
 </p>
-<br><br>
+<br>
+
+<div class="dashboard">
+<div class="terminal-container objective-container">
+
+    <div class="terminal-header">
+            $ cat ./OBJECTIVE
+    </div>
+
+        <div class="terminal-content">
+            <p>You have one main objective.<br><br>FIND FLAGS.<br><br>Think Carefully, Read Everything. 
+            </p>
+    </div>
+
+
+
+</div>
+
+<div class="terminal-container challenge-container">
+
+    <div class="terminal-header">
+            $ ls ./ENTER_CHALLENGES
+    </div>
+
+        <div class="challenge-grid">
+            <a href="webChal.html" class="challenge-card web-card">
+                <div class="challenge-title">WEB</div><br>
+                <div class="chal-info">07 Challenges</div><br><br>
+                <div class="enter-button">Enter</div>
+                </a>
+            <a href="crypChal.html" class="challenge-card crypto-card">
+                <div class="challenge-title">CRYPTO</div><br>
+                <div class="chal-info">09 Challenges</div><br><br>
+                <div class="enter-button">Enter</div>
+                </a>
+        </div>
+
+</div>
+<div class="terminal-container progress-container">
+
+    <div class="terminal-header">
+            $ cat ./PROGRESS
+    </div>
+
+<div class="challenge-grid2">
+        <a href="webChal.html" class="challenge-card">
+            <div class="challenge-title">WEB</div>
+            <div class="challenge-info">
+                07 Challenges
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill web-progress"></div>
+            </div>
+            <div class="web-progress-text" id="web-progress-text">
+                0 / 7
+            </div>
+        </a>
+        <a href="crypChal.html" class="challenge-card">
+            <div class="challenge-title">CRYPTO</div>
+            <div class="challenge-info">
+                09 Challenges
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill crypto-progress"></div>
+            </div>
+            <div class="crypto-progress-text" id="crypto-progress-text">
+                0 / 9
+            </div>
+        </a>
+        </div>
+
+
+</div>
+</div>
 
 
 
 
-
-
-<h2>Full Flag Found Section:</h2>
-
-
-<h3>&emsp;Cryptography Challenges:</h3>
-<ul id="flagChecklist" class="flagChecklist" >
-     <li>
-        <input type="checkbox" id="crypt-flag1" data-category="crypt_flag" data-challenge-id="1">
-        <label for="crypt-flag1">Flag #1</label>
-        </li>
-    <li>
-        <input type="checkbox" id="crypt-flag2" data-category="crypt_flag" data-challenge-id="2">
-        <label for="crypt-flag2">Flag #2</label>
-    </li>
-    <li>
-        <input type="checkbox" id="crypt-flag3" data-category="crypt_flag" data-challenge-id="3">
-        <label for="crypt-flag3">Flag #3</label>
-    </li>
-    <li>
-        <input type="checkbox" id="crypt-flag4" data-category="crypt_flag"data-challenge-id="4">
-        <label for="crypt-flag4">Flag #4</label>
-    </li>
-    <li>
-        <input type="checkbox" id="crypt-flag5" data-category="crypt_flag" data-challenge-id="5">
-        <label for="crypt-flag5">Flag #5</label>
-    </li>
-    <li>
-        <input type="checkbox" id="crypt-flag6" data-category="crypt_flag" data-challenge-id="6">
-        <label for="crypt-flag6">Flag #6</label>
-    </li>
-       <li>
-        <input type="checkbox" id="crypt-flag7" data-category="crypt_flag" data-challenge-id="7">
-        <label for="crypt-flag7">Flag #7</label>
-    </li>
-    <li>
-        <input type="checkbox" id="crypt-flag8" data-category="crypt_flag" data-challenge-id="8">
-        <label for="crypt-flag8">Flag #8</label>
-    </li>
-    <li>
-        <input type="checkbox" id="crypt-flag9" data-category="crypt_flag" data-challenge-id="9">
-        <label for="crypt-flag9">Flag #9</label>
-    </li>
-
-    </li>
-</ul>
-
-
-<br><br>
-<h3>&emsp;Web Challenges:</h3>
-
-<ul id="flagChecklist" class="flagChecklist" >
-     <li>
-        <input type="checkbox" id="web-flag1" data-category="web_flag" data-challenge-id="1">
-        <label for="web-flag1">Flag #1</label>
-        </li>
-    <li>
-        <input type="checkbox" id="web-flag2"  data-category="web_flag" data-challenge-id="2">
-        <label for="web-flag2">Flag #2</label>
-    </li>
-    <li>
-        <input type="checkbox" id="web-flag3"  data-category="web_flag"data-challenge-id="3">
-        <label for="web-flag3">Flag #3</label>
-    </li>
-    <li>
-        <input type="checkbox" id="web-flag4" data-category="web_flag" data-challenge-id="4">
-        <label for="web-flag4">Flag #4</label>
-    </li>
-    <li>
-        <input type="checkbox" id="web-flag5" data-category="web_flag" data-challenge-id="5">
-        <label for="web-flag5">Flag #5</label>
-    </li>
-    <li>
-        <input type="checkbox" id="flag6"  data-category="web_flag"data-challenge-id="6">
-        <label for="web-flag6">Flag #6</label>
-    </li>
-       <li>
-        <input type="checkbox" id="web-flag7"  data-category="web_flag"data-challenge-id="7">
-        <label for="flag7">Flag #7</label>
-    </li>
-
-    
-</ul>
-</body>
 <br><br><br><br>
 
 <h2 class="DANGER">DANGER ZONE</h2>

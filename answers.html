@@ -238,7 +238,11 @@
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">$ cat ./Challenge/Web/06</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
-        <p class="inner">
+        <p class="inner">To solve this challenge you would have need to spend some time testing with names and 
+            passwords to recognise the pattern. You would realise it is only checking the password of the username Ellie, and 
+            seeing if the admin permission is true or not. To solve this challenge all you need to do is put in the 
+            name Ellie into the username section, then in the password section put "username=Ellie&admin=true". This will 
+            allow you to login and get to the flag. 
         </p>
         <br>
             <div class="tester2" onclick="toggleOn2(this, event)">

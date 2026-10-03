@@ -1,0 +1,92 @@
+<code>
+<!doctype html>
+<html lang="en">
+
+
+<head>
+<title>Answers</title>
+<link rel="stylesheet" href="../styles/style4.css">
+<header><h1>./Challenge_09_Answer_Cheat_Sheet</h1></header>
+<br><br>
+
+
+<body>
+<h3>Important things you need to know:</h3>
+
+<ul>
+    <li><code>W</code> is a <strong>superincreasing sequence</strong>.</li>
+    <li><code>q</code> is larger than <code>sum(W)</code>.</li>
+    <li><code>r</code> is relatively prime to <code>q</code>.</li>
+</ul>
+<br><br>
+<h3>Step 1 &mdash; Find the modular inverse</h3>
+
+<p>The first step is to find the modular inverse of <code>r</code>:</p>
+
+<p><code>(r * r⁻¹) mod q = 1</code></p>
+
+<p>
+    This allows you to undo the multiplication used to create the public key.
+    <br> <br>
+    Reminder:<br>
+    q > sum(W), So first add all the values in W together.
+</p>
+<br><br>
+<h3>Step 2 &mdash; Decrypt each ciphertext number</h3>
+
+<p>For each ciphertext number <code>C</code>, calculate:</p>
+
+<p><code>S = (C &times; r⁻¹) mod q</code></p>
+
+<p>
+    This gives you the value that needs to be solved using the private sequence:
+</p>
+
+<p>
+    <code>W = [w1, w2, w3, w4, w5, w6, w7, w8]</code>
+</p>
+<br><br>
+<h3>Step 3 &mdash; Solve the subset-sum</h3>
+
+<p>
+    Use the values in <code>W</code> to determine which numbers were used to create
+    <code>S</code>.
+</p>
+
+<p>Each value in <code>W</code> produces either:</p>
+
+<ul>
+    <li><code>1</code> = used</li>
+    <li><code>0</code> = not used</li>
+</ul>
+
+<p>This gives you an 8-bit binary value.</p>
+<br><br>
+<h3>Step 4 &mdash; Convert to ASCII</h3>
+
+<p>
+    Convert the resulting binary value into a number, then convert that number
+    to its ASCII character.
+</p>
+
+<p>For example:</p>
+
+<p><code>01000001</code> &rarr; <code>65</code> &rarr; <code>A</code></p>
+<br><br>
+<h3>Step 5 &mdash; Repeat</h3>
+
+<p>
+    Repeat the process for <strong>every ciphertext number</strong> until you
+    have recovered the entire message.
+</p>
+<br><br>
+<h3>Flag format:</h3>
+
+<p>Once you have the plaintext:</p>
+
+<ul>
+    <li>Wrap the entire message in <code>ctf{}</code></li>
+</ul>
+</body>
+</html>
+</code>

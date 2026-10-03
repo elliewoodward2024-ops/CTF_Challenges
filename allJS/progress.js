@@ -25,6 +25,7 @@ function completeFlag(flagID) {
     }
 
     updateProgress();
+    updateHomeProgress();
 }
 
 function isFlagFound(flagID) {
@@ -53,12 +54,63 @@ function updateProgress() {
             const flagID = `${category}-${id}`
             checkbox.checked = foundFlags.includes(flagID);
         });
+}
 
+function updateHomeProgress() {
+    const foundFlags = getFoundFlags();
+
+    let webComp = 0;
+    let cryptComp = 0;
+
+    foundFlags.forEach(flagID => {
+        if (flagID.startsWith("web_flag-")) {
+            webComp++;
+        }
+
+        if (flagID.startsWith("crypt_flag-")) {
+            cryptComp++;
+        }
+    });
+
+    const webPer = (webComp / 7) * 100;
+    const cryptPer = (cryptComp / 9) * 100;
+
+    const webBar = document.querySelector(".web-progress");
+    if (webBar) {
+        webBar.style.width = `${webPer}%`;
+    }
+
+    const cryptoBar = document.querySelector(".crypto-progress");
+    if (cryptoBar) {
+        cryptoBar.style.width = `${cryptPer}%`;
+    }
+
+
+    const webText = document.querySelector("#web-progress-text");
+
+    if (webText) {
+        webText.textContent = `${webComp} / 7`;
+    }
+
+
+    const cryptoText = document.querySelector("#crypto-progress-text");
+
+    if (cryptoText) {
+        cryptoText.textContent = `${cryptComp} / 9`;
+    }
 
 }
 
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     updateProgress();
+    updateHomeProgress();
 
     const resetButton = document.querySelector("#reset-progress");
 
