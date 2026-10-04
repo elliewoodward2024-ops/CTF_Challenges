@@ -10,11 +10,12 @@ https://elliewoodward2024-ops.github.io/CTF_Challenges/
 ![HomePage](ProgressPics/FirstFinal/4Oct2026.png)
 ![CryptoPage](ProgressPics/FirstFinal/4Oct2026_pt2.png)
 
+
 ## Features
 
  - 2 Pages of Challenges
-    -    Cryptography 
-    -    Web Exploration 
+    -    Cryptography, 9 
+    -    Web Exploration, 7 
  - Solution Page
  - Answer Check with Progress 
  

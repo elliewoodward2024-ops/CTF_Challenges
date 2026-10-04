@@ -1,3 +1,6 @@
+random code I had to change but didn't want to lose so i put it here. 
+
+
 function checkIfFlag(value) {
     const flag = flags.find(item => item.value === value);
 
