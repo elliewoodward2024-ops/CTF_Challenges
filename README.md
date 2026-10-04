@@ -1,5 +1,28 @@
-# personal-site
-Well I want to create a web exploration based ctf hunting for flags kind of thing. Want to mix maybe 
-some cryptography in there as well. Aka I wanna mix my coding of web pages with my CTF problem solving of web exploration and cryptography. Would have done more of the terminal stuff of creating bash scripts and make network where you just find all flags possible but that may be a later project I wanna do.
+# CTF_Challenges
 
-- add to this later
+The idea of this page was to create a selection of easy to hard challenges that cover a range of different cryptography cyphers as well as web exploration challenges. Creating a CTF style challenge website to learn, 
+problem solve, and explore cybersecurity areas. 
+
+## Demo Link
+https://elliewoodward2024-ops.github.io/CTF_Challenges/ 
+
+## Screenshots
+![HomePage](ProgressPics/FirstFinal/4Oct2026.png)
+![CryptoPage](ProgressPics/FirstFinal/4Oct2026_pt2.png)
+
+## Features
+
+ - 2 Pages of Challenges
+    -    Cryptography 
+    -    Web Exploration 
+ - Solution Page
+ - Answer Check with Progress 
+ 
+## Installation to run locally
+
+1. You will need to Clone the repository: 
+   ```
+   git clone https://github.com/elliewoodward2024-ops/CTF_Challenges.git
+2. Open the project in your code editor such as VS Code.
+3. Open `index.html` in your browser. 
+
