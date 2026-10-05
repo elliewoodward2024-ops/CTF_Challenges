@@ -14,10 +14,10 @@ https://elliewoodward2024-ops.github.io/CTF_Challenges/
 ## Features
 
  - 2 Pages of Challenges
-    -    Cryptography, 9 
-    -    Web Exploration, 7 
+    -    Cryptography, 9 Challenges
+    -    Web Exploration, 7 Challenges
  - Solution Page
- - Answer Check with Progress 
+ - Answer Check with Progress Bar
  
 ## Installation to run locally
 

@@ -1,6 +1,6 @@
 Merkle–Hellman challenge
 
-crpto challenge 9 
+crypto challenge 9 
 
 
 - encryption relationship 
