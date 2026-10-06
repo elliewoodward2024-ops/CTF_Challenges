@@ -6,7 +6,7 @@ problem solve, and explore cybersecurity areas.
 ## Demo Link
 https://elliewoodward2024-ops.github.io/CTF_Challenges/ 
 
-## Screenshots
+## Images
 ![HomePage](ProgressPics/FirstFinal/4Oct2026.png)
 ![CryptoPage](ProgressPics/FirstFinal/4Oct2026_pt2.png)
 
