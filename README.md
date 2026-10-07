@@ -27,3 +27,11 @@ https://elliewoodward2024-ops.github.io/CTF_Challenges/
 2. Open the project in your code editor such as VS Code.
 3. Open `index.html` in your browser. 
 
+
+#### Reference
+Had no reference for this project.
+
+#### AI USAGE
+Only AI usage was to fix some errors that I couldn't seem to identify. Helped mainly fix 
+problems with my JS due to my lacking experience in the language. NO other usage other-
+wise. 
