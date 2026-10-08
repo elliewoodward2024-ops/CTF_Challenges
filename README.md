@@ -33,5 +33,4 @@ Had no reference for this project.
 
 #### AI USAGE
 Only AI usage was to fix some errors that I couldn't seem to identify. Helped mainly fix 
-problems with my JS due to my lacking experience in the language. NO other usage other-
-wise. 
+problems with my JS due to my lacking experience in the language. No other usage otherwise. 
