@@ -28,8 +28,6 @@ https://elliewoodward2024-ops.github.io/CTF_Challenges/
 3. Open `index.html` in your browser. 
 
 
-#### Reference
-Had no reference for this project.
 
 #### AI USAGE
 Only AI usage was to fix some errors that I couldn't seem to identify. Helped mainly fix 
