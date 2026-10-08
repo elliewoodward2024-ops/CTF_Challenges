@@ -1,6 +1,6 @@
 # CTF_Challenges
 
-The idea of this page was to create a selection of easy to hard challenges that cover a range of different cryptography cyphers as well as web exploration challenges. Creating a CTF style challenge website to learn, 
+The idea of this page was to create a selection of easy to hard challenges that cover a range of different cryptography ciphers as well as web exploration challenges. Creating a CTF style challenge website to learn, 
 problem solve, and explore cybersecurity areas. 
 
 ## Demo Link

@@ -42,7 +42,7 @@
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn">&times;</a>
         <p class="inner">
             These have all the answers for all challenges through the page. These are not
-            full in depth explanation but quick steps for solving each problem.
+            full in depth explanations but quick steps for solving each problem.
             This could be in form of command or quick small explanation. 
         </p>
         <br>
@@ -101,7 +101,7 @@
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">$ cat ./Challenge/Crypto/05</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
-        <p class="inner">Smiler to challenge 3, but this one has a shift of 12, known as a cesar cypher.
+        <p class="inner">Similar to challenge 3, but this one has a shift of 12, known as a caesar cipher.
              You can either decrypt by hand, write script, or use the Cryptii or Boxentriq tool. 
         </p>
         <br>
@@ -116,7 +116,7 @@
         <span class="Preview">$ cat ./Challenge/Crypto/06</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">Using the hint you could have looked up what Vigenère is which you would have noticed 
-            is a kind of cypher. Then you may have leant or known that you need a key for this kind of cypher.
+            is a kind of cipher. Then you may have learnt or known that you need a key for this kind of cipher.
             From the hint, you could have guess the key was "weird" due to the asterisk around it. You could have 
             used the Cryptii or Boxentriq tool, done by hand, or write a script to decode this.
         </p>
@@ -131,7 +131,7 @@
         <span class="Preview">$ cat ./Challenge/Crypto/07</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">This was a little bit more obscure, but after reading or trial and error you could find
-            out that this style with 'a' and 'b' is a Affine cypher. Then covert letters to numbers (A=0, Z=25),
+            out that this style with 'a' and 'b' is a Affine cipher. Then covert letters to numbers (A=0, Z=25),
             find the modular inverse ((a*a^{-1})(mod26) = 1 ), apply decryption formula (P = a^{-1}*(C - b)(mod26)), and 
             lastly covert numbers back to letters. If you don't want to do all that you could use the Cryptii or Boxentriq tool.
             Then just wrap your answer in ctf{}. 
@@ -146,10 +146,10 @@
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">$ cat ./Challenge/Crypto/08</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
-        <p class="inner">Once again more of an obscure hint and cypher. This is a Playfair cypher.
-            To solve this playfair cypher you first want to make the 5*5 grid replacing the first letters
+        <p class="inner">Once again more of an obscure hint and cipher. This is a Playfair cipher.
+            To solve this playfair cipher you first want to make the 5*5 grid replacing the first letters
             with the key words, then filling the rest of the grid with the rest of the alphabet combining I and J 
-            to fit 25 letters. You would then want to spilt the cypher text into pairings. Apply the main rules of the cypher.
+            to fit 25 letters. You would then want to split the cipher text into pairings. Apply the main rules of the cipher.
             Or you could use the Boxentriq tool. 
         </p>
         <br>
