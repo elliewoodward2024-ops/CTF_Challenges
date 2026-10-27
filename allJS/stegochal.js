@@ -8,7 +8,7 @@ const sidebar = document.getElementById('sidebar');
 const closeBtn2 = document.getElementById('close-btn2');
 
 const _URL = "https://private-flagsss.ellie-woodward-2024.workers.dev/";
-const category = "crypt_flag"
+const category = "stego_flag"
 
 
 menuBtn.addEventListener('click', () => { sidebar.classList.add('active'); });
@@ -66,7 +66,7 @@ async function handleInput() {
                         "application/json"
                 },
                 body: JSON.stringify({
-                    category: "crypt_flag",
+                    category: "stego_flag",
                     flag: value,
                 })
             });
