@@ -1,21 +1,23 @@
 # CTF_Challenges
 
-The idea of this page was to create a selection of easy to hard challenges that cover a range of different cryptography ciphers as well as web exploration challenges. Creating a CTF style challenge website to learn, 
-problem solve, and explore cybersecurity areas. 
+The idea of this page was to create a selection of easy to hard challenges that cover a range of different cryptography ciphers, with some steganography and web exploration challenges. Creating a CTF style challenge website to learn, problem solve, and explore cybersecurity areas. 
 
 ## Demo Link
 https://elliewoodward2024-ops.github.io/CTF_Challenges/ 
 
+
+
 ## Images
-![HomePage](ProgressPics/FirstFinal/4Oct2026.png)
-![CryptoPage](ProgressPics/FirstFinal/4Oct2026_pt2.png)
+![HomePage]
+![CryptoPage]
 
 
 ## Features
 
- - 2 Pages of Challenges
+ - 3 Pages of Challenges
     -    Cryptography, 9 Challenges
     -    Web Exploration, 7 Challenges
+    -    Steganography, 6 Challenges 
  - Solution Page
  - Answer Check with Progress Bar
  
