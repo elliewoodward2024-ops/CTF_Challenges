@@ -61,6 +61,7 @@ function updateHomeProgress() {
 
     let webComp = 0;
     let cryptComp = 0;
+    let stegoComp = 0;
 
     foundFlags.forEach(flagID => {
         if (flagID.startsWith("web_flag-")) {
@@ -70,10 +71,16 @@ function updateHomeProgress() {
         if (flagID.startsWith("crypt_flag-")) {
             cryptComp++;
         }
+
+        if (flagID.startsWith("stego_flag-")) {
+            stegoComp++;
+        }
     });
 
     const webPer = (webComp / 7) * 100;
     const cryptPer = (cryptComp / 9) * 100;
+    const stegoPer = (stegoComp / 6) * 100;
+
 
     const webBar = document.querySelector(".web-progress");
     if (webBar) {
@@ -83,6 +90,11 @@ function updateHomeProgress() {
     const cryptoBar = document.querySelector(".crypto-progress");
     if (cryptoBar) {
         cryptoBar.style.width = `${cryptPer}%`;
+    }
+
+    const stegoBar = document.querySelector(".stego-progress");
+    if (stegoBar) {
+        stegoBar.style.width = `${stegoPer}%`;
     }
 
 
@@ -97,6 +109,14 @@ function updateHomeProgress() {
 
     if (cryptoText) {
         cryptoText.textContent = `${cryptComp} / 9`;
+    }
+
+
+
+    const stegoText = document.querySelector("#stego-progress-text");
+
+    if (stegoText) {
+        stegoText.textContent = `${stegoComp} / 6`;
     }
 
 }
