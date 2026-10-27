@@ -8,8 +8,9 @@ https://elliewoodward2024-ops.github.io/CTF_Challenges/
 
 
 ## Images
-![HomePage]
-![CryptoPage]
+![HomePage](ProgressPics/SecondFinal/homepage.png)
+![CryptoPage](ProgressPics/SecondFinal/cryptopage.png)
+![CryptoPage2](ProgressPics/SecondFinal/cryptochal.png)
 
 
 ## Features

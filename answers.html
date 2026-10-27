@@ -310,8 +310,8 @@
         <span class="Preview">$ cat ./Challenge/Stego/04</span>
         <a href="#" onclick="toggleOff(this, event); return false" class="close-btn4">&times;</a>
         <p class="inner">This one is similar to the last challenge. However to solve this challenge in the most
-            efficient way you need to use the 'exiftool' command followed by the 'grep' grep command. This would look like
-            'exiftool {add file name} | grep "ctf"'
+            efficient way you need to use the 'exiftool' command followed by the 'grep' command. This would look like
+            'exiftool filename | grep "ctf"'
         </p>
         <br>
             <div class="tester2" onclick="toggleOn2(this, event)">
@@ -343,7 +343,7 @@
             'binwalk' command on the file. After using the 'binwalk' command and seeing there is a zip file 
             appended inside the image, you would then want to extract the file. The command for that is 
             'dd if=filename of=newfilename.zip bs=519252 skip=1'. You then unzip the zip file to get the new file. 
-            This file you can use the strings command on to get the final flag. 
+            With this file you can use the 'strings' command on to get the final flag. 
         </p>
         <br>
             <div class="tester2" onclick="toggleOn2(this, event)">
