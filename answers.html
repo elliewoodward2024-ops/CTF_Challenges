@@ -47,7 +47,7 @@
         </p>
         <br>
         <div class="tester2" onclick="toggleOn2(this, event)">
-            <span class="Preview">Both Flags 1 Answer</span>
+            <span class="Preview">ALL Flags 1 Answer</span>
                 <p class="inner-hint">ctf{Gr3@t_j06_y0U_f0u^d_the_f!rst_0ne}</p>
         </div>
     </div>
@@ -264,6 +264,92 @@
             </div>
     </div>
 
+
+    </div>
+</div>
+
+
+
+
+
+
+
+ </div>
+ 
+ <p class="hmm"></p>
+<h3>&emsp;Steganography Challenges:</h3>
+<div class="container">
+    <div class="tester" onclick= "toggleOn(this, event)" >
+        <span class="Preview">$ cat ./Challenge/Stego/02</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn4">&times;</a>
+        <p class="inner">You are able to find this by using the 'cat' command to see the end trails of the 
+            image.
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 2</span>
+                    <p class="inner-hint">ctf{@lw@ys_cat_s0meth!ng}</p>
+            </div>
+
+    </div>
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Stego/03</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn4">&times;</a>
+        <p class="inner">By using the 'exiftool' command you are able to read though the information of the file 
+            to then get the flag.
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 3</span>
+                    <p class="inner-hint">ctf{th3_stArt_of_eXift00l}</p>
+            </div>
+    </div>
+    
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Stego/04</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn4">&times;</a>
+        <p class="inner">This one is similar to the last challenge. However to solve this challenge in the most
+            efficient way you need to use the 'exiftool' command followed by the 'grep' grep command. This would look like
+            'exiftool {add file name} | grep "ctf"'
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 4</span>
+                    <p class="inner-hint">ctf{0h_look_you_fouNd_!}</p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Stego/05</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn4">&times;</a>
+        <p class="inner">By using the 'exiftool' and reading the meta data you are given the coordinates in
+        DMS (Degrees, Minutes, Seconds) form. However the question asks you to give them in Decimal Degrees form. 
+        To accomplish this through the commands you have to use the '-GPSPosition' as part of the 'exiftool' command.
+        The final command being 'exiftool filename -GPSPosition -n'.
+         </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 5</span>
+                    <p class="inner-hint">ctf{51.4102777777778 -1.78888888888889}</p>
+            </div>
+    </div>
+
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">$ cat ./Challenge/Stego/06</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn4">&times;</a>
+        <p class="inner"> This challenge has a couple of layers. First thing first, you use the
+            'binwalk' command on the file. After using the 'binwalk' command and seeing there is a zip file 
+            appended inside the image, you would then want to extract the file. The command for that is 
+            'dd if=filename of=newfilename.zip bs=519252 skip=1'. You then unzip the zip file to get the new file. 
+            This file you can use the strings command on to get the final flag. 
+        </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Flag 6</span>
+                    <p class="inner-hint">ctf{str1ngs_f1nds_th3_h1dd3n_m3ssag3}</p>
+            </div>
+    </div>
 
     </div>
 </div>

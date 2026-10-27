@@ -185,6 +185,16 @@ header {
     left: 175px;
 }
 
+.tester .close-btn4 {
+    text-decoration: none;
+    color: #a600ff;
+    position: relative;
+    font-size: 18px;
+    border: none;
+    top: -3px;
+    left: 160px;
+}
+
 .tester2 {
     align-items: center;
     background-color: rgb(0, 0, 0);
